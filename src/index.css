@@ -1,0 +1,15 @@
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/167/396/original/pexels-pixabay-531767.jpg?1749106171");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.weather-app {
+  background-color: whitesmoke;
+  opacity: 0.75;
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px #41326414;
+  border-radius: 16px;
+}
