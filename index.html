@@ -12,24 +12,29 @@
   <body>
     <div class="weather-app">
     <header>
-        <form>
-      <input type="search" placeholder="Enter your city..." required />
-      <input type="submit" value="Search" />
+        <form class="search-form">
+      <input type="search" placeholder="Enter your city..." required class="search-form-input"/>
+      <input type="submit" value="Search" class="search-form-button"/>
     </form>
-
+</header>
+<div class="app-data">
     <div>
-      <h1>Paris</h1>
-      <p>
+      <h1 class="app-city-name">Paris</h1>
+      <p class="app-details">
         Thursday 16:27, few clouds
         <br />
-        Humidity: 86%, Wind: 4.92km/h
+        Humidity: 
+        <strong>86%</strong>, Wind: 
+        <strong>4.92km/h</strong>
       </p>
     </div>
-    <div>
-      <p>☀️ 20°C</p>
+    <div class="app-temperature-container">
+        <div class="app-emoji">☀️</div> 
+        <div class="app-temperature">20</div>
+        <div class="app-temp-unit">°C</div>
     </div>
+</div>
 </main>
-</header>
     <footer>
       This website was coded by
       <a href="https://github.com/kessjelly" target="_blank"> Jessica Kelly</a>,
