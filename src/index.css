@@ -88,8 +88,8 @@ main {
 }
 
 .app-emoji {
-  font-size: 44px;
-  margin-top: 20px;
+  width: 88px;
+  height: 88px;
 }
 
 .app-temp-unit {
