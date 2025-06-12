@@ -59,7 +59,6 @@ main {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .app-city {
@@ -105,7 +104,6 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 30px;
-  overflow: hidden;
 }
 
 .forecast-date {
@@ -116,8 +114,8 @@ main {
 }
 
 .forecast-icon {
-  width: 88px;
-  height: 88px;
+  max-width: 100%;
+  height: auto;
   display: block;
   margin: 0 auto;
 }
@@ -128,7 +126,6 @@ main {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  overflow: hidden;
 }
 
 .forecast-temp {
