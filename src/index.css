@@ -70,11 +70,12 @@ main {
 .app-details {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 20px;
 }
 
 .app-details strong {
   color: #f65282;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 .app-temperature-container {
@@ -95,6 +96,37 @@ main {
 .app-temp-unit {
   margin-top: 16px;
   font-size: 28px;
+}
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.forecast-date {
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.forecast-icon {
+  font-size: 38px;
+  text-align: center;
+}
+
+.forecast-temps {
+  text-align: center;
+  color: #f65282;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.forecast-temp {
+  padding: 0 10px;
 }
 
 footer {
