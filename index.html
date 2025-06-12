@@ -5,51 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/index.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Météorologie</title>
   </head>
   <body>
     <div class="weather-app">
-    <header>
-    <form class="search-form" id="search-form">
-      <input type="search" placeholder="Enter your city..." required id="search-form-input" class="search-form-input"/>
-      <input type="submit" value="Search" class="search-form-button"/>
-    </form>
-</header>
-<div class="app-data">
-    <div>
-      <h1 class="app-city-name" id="app-city-name"></h1>
-      <p class="app-details">
-        <span id="time"></span>, 
-        <span id="description"></span>
-        <br />
-        Humidity: 
-        <strong id="humidity"></strong>, Wind: 
-        <strong id="speed"></strong>
-      </p>
+      <header>
+        <form class="search-form" id="search-form">
+          <input
+            type="search"
+            placeholder="Enter your city..."
+            required
+            id="search-form-input"
+            class="search-form-input"
+          />
+          <input type="submit" value="Search" class="search-form-button" />
+        </form>
+      </header>
+      <main>
+        <div class="app-data">
+          <div>
+            <h1 class="app-city-name" id="app-city-name"></h1>
+            <p class="app-details">
+              <span id="time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity:
+              <strong id="humidity"></strong>, Wind:
+              <strong id="speed"></strong>
+            </p>
+          </div>
+          <div class="app-temperature-container">
+            <div class="app-emoji" id="icon"></div>
+            <div class="app-temperature" id="temperature"></div>
+            <div class="app-temp-unit">°C</div>
+          </div>
+        </div>
+        <div class="weather-forecast" id="forecast"></div>
+      </main>
+      <footer>
+        This website was coded by
+        <a href="https://github.com/kessjelly" target="_blank"> Jessica Kelly</a
+        >, is open-sourced on
+        <a href="https://github.com/kessjelly/meteorologie" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://meteorologie-app.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
     </div>
-    <div class="app-temperature-container">
-        <div class="app-emoji" id="icon"></div> 
-        <div class="app-temperature" id="temperature"></div>
-        <div class="app-temp-unit">°C</div>
-    </div>
-</div>
-<div class="weather-forecast" id="forecast"> </div>
-</main>
-    <footer>
-      This website was coded by
-      <a href="https://github.com/kessjelly" target="_blank"> Jessica Kelly</a>,
-      is open-sourced on
-      <a href="https://github.com/kessjelly/meteorologie" target="_blank"
-        >Github</a>
-      and hosted on
-      <a href="https://meteorologie-app.netlify.app/" target="_blank"
-        >Netlify</a
-      >
-    </footer>
-</div>
-<script src="src/index.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
