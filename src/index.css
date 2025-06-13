@@ -107,7 +107,6 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 30px;
-  box-sizing: border-box;
 }
 
 .forecast-date {
@@ -118,7 +117,7 @@ main {
 }
 
 .forecast-icon {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
   display: block;
   margin: 0 auto;
