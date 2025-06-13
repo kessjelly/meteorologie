@@ -8,6 +8,7 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
+  let feelElement = document.querySelector("#feel-like-temp");
 
   cityElement.innerHTML = response.data.city;
   temperatureElement.innerHTML = Math.round(temperature);
@@ -16,8 +17,13 @@ function updateWeather(response) {
   speedElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" />`;
+  feelElement.innerHTML = `${Math.round(
+    response.data.temperature.feels_like
+  )}°C`;
 
   getForecast(response.data.city);
+
+  console.log(response.data);
 }
 
 function formatDate(date) {
