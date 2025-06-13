@@ -24,7 +24,7 @@ a {
   border-radius: 16px;
   box-sizing: border-box;
   width: 100%;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 .search-form-input {
