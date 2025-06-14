@@ -108,7 +108,7 @@ main {
   justify-content: space-around;
   margin-bottom: 30px;
   margin-top: 30px;
-  max-width: 100%;
+  max-width: 600px;
 }
 
 .forecast-date {
